@@ -76,7 +76,6 @@ public class dangnhap extends javax.swing.JFrame {
         });
         getContentPane().add(bthuy, new org.netbeans.lib.awtextra.AbsoluteConstraints(302, 330, 100, -1));
 
-        pass.setText("jPasswordField1");
         pass.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 passActionPerformed(evt);
@@ -127,7 +126,7 @@ public class dangnhap extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "Đăng nhập thành công!");
             // Chuyển hướng sang giao diện chính hoặc thực hiện các hành động tiếp theo
             this.setVisible(false);
-            new ThueTruyen().setVisible(true);
+            new FORMTRUYEN().setVisible(true);
         } else {
             JOptionPane.showMessageDialog(this, "Tên người dùng hoặc mật khẩu không đúng!");
         }
@@ -142,7 +141,9 @@ public class dangnhap extends javax.swing.JFrame {
     }//GEN-LAST:event_passActionPerformed
 
     private void btdangkyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btdangkyActionPerformed
-        // TODO add your handling code here:
+       dangky formDangKy = new dangky();
+    formDangKy.setVisible(true);
+    this.setVisible(false);
     }//GEN-LAST:event_btdangkyActionPerformed
 
     private void bthoatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bthoatActionPerformed
